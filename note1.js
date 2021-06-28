@@ -59,7 +59,7 @@ const readNote = (title) =>{
     const notes = loadNotes()
     const dupticates = notes.find((note) =>{
         if(note.title == title){
-            console.log(chalk.inverse.blue(note.title))
+            console.log(chalk.inverse.red(note.title))
             console.log(note.body)
         }
         return note.title==title
